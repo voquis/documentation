@@ -9,7 +9,7 @@ Some services use SSH for secure but short-lived sessions to transfer files, e.g
 ## Generating SSH private/public keypairs
 The `ssh-keygen` command line utility can be used to generate SSH private/public keypairs with:
 ```shell
-ssh-keygen -b 4096 -f ~/.ssh/id_rsa.key
+ssh-keygen -b 4096 -f ~/.ssh/id_rsa
 ```
 This above will produce a private/public keypair with a length of 4096 bits. The private key (`id_rsa`) will be saved in the folder `.ssh` in the current users home directory (`~`).
 Alongside this file, the public key (`id_rsa.pub`) will also be created.
