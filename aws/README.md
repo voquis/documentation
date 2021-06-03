@@ -59,7 +59,7 @@ region = eu-west-2
 
 To issue CLI commands, first login using the named pofile in the config, e.g. `org-dev`:
 ```shell
-aws2 sso login --profile org-dev
+aws sso login --profile org-dev
 ```
 This command will try to launch the default browser prompting for login.
 To bypass this behaviour and manually launch the browser, precede the above command with `BROWSER=true`.
