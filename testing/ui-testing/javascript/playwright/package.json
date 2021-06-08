@@ -1,0 +1,13 @@
+{
+  "name": "ui-tests",
+  "version": "1.0.0",
+  "description": "UI tests",
+  "main": "test.js",
+  "devDependencies": {
+    "jest": "^27.0.4",
+    "playwright": "^1.11.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

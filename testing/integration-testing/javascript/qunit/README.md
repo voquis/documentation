@@ -1,4 +1,5 @@
 # Integration testing in javascript
+This example tests integration between a simple function and a [third-party currency exchange rate service](https://freecurrencyapi.net).
 
 ## Testing in the browser with QUnit
 [QUnit](https://qunitjs.com/intro/) is a project from the jQuery team.

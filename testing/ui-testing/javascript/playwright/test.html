@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>UI testing</title>
+</head>
+<body>
+  <!-- Code to test -->
+  <button id="get-rate" onclick="renderEurForOneGbp()">Get Rate</button>
+  <div id="rate">Click above to get rate</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    function renderEurForOneGbp() {
+      // URL for remote data fetch
+      const url = "https://freecurrencyapi.net/api/v1/rates?base_currency=GBP";
+      // Make asynchronous javacsript (AJAX) call to URL to fetch data
+      $.get(url, (response) => {
+        // Extract useful data from the response
+        data = response.data;
+        date = Object.keys(data)[0];
+        eur = data[date]['EUR'];
+        $('#rate').html(`<p id="result">${eur}</p>`);
+      });
+    }
+  </script>
+</body>

@@ -1,0 +1,3 @@
+recordings/*
+!recordings/.gitkeep
+package-lock.json
