@@ -25,3 +25,7 @@ At lower levels this would test the behaviour of code functions with external sy
 At higher levels this would test the behaviour of collections of code or infrastructure with other external services.
 ##### JavaScript testing
 ###### [QUnit](testing/integration-testing/javascript/qunit/README.md): in-browser testing
+
+### UI (user interface) testing
+##### JavaScript testing
+###### [Playwright](testing/ui-testing/javascript/playwright/README.md): browser testing
