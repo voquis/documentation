@@ -26,6 +26,6 @@ At higher levels this would test the behaviour of collections of code or infrast
 ##### JavaScript testing
 ###### [QUnit](testing/integration-testing/javascript/qunit/README.md): in-browser testing
 
-### UI (user interface) testing
+#### UI (user interface) testing
 ##### JavaScript testing
 ###### [Playwright](testing/ui-testing/javascript/playwright/README.md): browser testing
