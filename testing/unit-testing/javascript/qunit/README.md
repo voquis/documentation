@@ -56,7 +56,7 @@ Change the function `addOne` to instead add 2:
 ```html
 <script>
   function addOne(a) {
-    return a + 1;
+    return a + 2;
   }
 </script>
 ```
