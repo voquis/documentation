@@ -64,6 +64,62 @@ To delete the public half of a keypair:
 gpg --delete-keys <KEY ID>
 ```
 
+### Renewing expired keys
+The private part of a key does not expire, but the public key can be renewed e.g. by another year.
+> Renewing a key generates a new public key that must be re-uploaded to e.g. GitHub/GitLab.
+
+Enter the key editor with:
+
+```shell
+gpg --edit-key <KEY ID>
+```
+This will display key details and enter the key editor.
+A new prompt (`gpg>`) is displayed at the end to run gpg-specific key-editing commands.
+
+```
+sec  rsa4096/A3AA000D29441C38
+     created: 2022-07-30  expired: 2023-07-30  usage: SC
+     trust: ultimate      validity: expired
+[ expired] (1). Firstname Lastname <firstname.lastname@example.com>
+
+gpg>
+```
+
+At the `gpg>` prompt, enter `expire`.
+
+```shell
+gpg> expire
+```
+
+This will initiate the key renewal process and the validity of the public key must be defined.
+Enter `1y` to generate another public key valid for 1 year.
+```shell
+Key is valid for? (0) 1y
+```
+This will display a confirmation message, for example:
+
+```
+Key expires at Sat 03 Aug 2024 17:27:41 BST
+```
+At the prompt, confirm the request with `y`:
+
+```
+Is this correct? (y/N) y
+```
+
+Once complete, the key details are printed again for review.
+> Changes must be saved before they may be used.
+To exit the key editor, enter `quit`:
+```
+gpg> quit
+```
+At the prompt to save, enter `y`:
+```
+Save changes? (y/N) y
+```
+
+The new public key may be viewed [as before](#viewing-the-contents-of-a-public-key) with `gpg --armor --export <KEY ID>`.
+
 ### Viewing help
 For usage information run:
 ```shell
