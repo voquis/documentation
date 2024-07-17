@@ -30,7 +30,7 @@ A similar random art fingerprint of the key should be displayed:
 
 ## Viewing the content of a public key
 The public key is not encrypted with a password because it is designed to be shared with a trusted host, i.e. the remote server.
-The public key is simply a file on disk (locaed at `~/.ssh/id_rsa.pub`), so may be opened with a text editor.
+The public key is simply a file on disk (located at `~/.ssh/id_rsa.pub`), so may be opened with a text editor.
 However, some visual editors may reformat characters and sequences, consequently it is recommended to display the key with the command line or open the file in an IDE (e.g. VSCode).
 To quickly display the contents of the file on the command line, use the `cat` command (concatenate) followed by the path to the file:
 ```shell
@@ -53,3 +53,12 @@ To view the detailed usage manual (`man`), run:
 ```shell
 man ssh-keygen
 ```
+
+## Applying Public SSH key to your github account
+Follow your way to `github`, `github account settings` then `SSH and GPG keys`.
+On this page, scroll down to the `SSH keys` section and press `New SSH Key`.
+
+To find the key, please look above at the `Viewing the content of a public key` section.
+
+Within the `New SSH Key` page, you will paste your public key that you copied and pasted, it will start similar to this:
+`ssh-rsa`
