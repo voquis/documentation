@@ -60,5 +60,5 @@ On this page, scroll down to the `SSH keys` section and press `New SSH Key`.
 
 To find the key, please look above at the `Viewing the content of a public key` section.
 
-Here you will paste your public key that you copied and pasted, it will start similar to this:
+Within the `New SSH Key` page, you will paste your public key that you copied and pasted, it will start similar to this:
 `ssh-rsa`
