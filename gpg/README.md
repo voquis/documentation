@@ -130,3 +130,18 @@ To view the detailed usage manual (`man`), run:
 ```shell
 man gpg
 ```
+
+## Applying Public gpg key to your github account
+Follow your way to `github`, `github account settings` then `SSH and GPG keys`.
+On this page, scroll down to the `GPG keys` section and press `New GPG Key`.
+Here you will paste your public key that you copied and pasted, it will start and end like this:
+`-----BEGIN PGP PUBLIC KEY BLOCK-----` and end `-----END PGP PUBLIC KEY BLOCK-----`
+
+
+To verify your `GPG Public Key` run the command, run:
+```shell
+gpg --armor --export <KEY ID>
+```
+
+Reminder: please take note of the Key ID that you generated earlier on: look at the Generating keys section for help,
+remember to look at the git documents to add the GPG key to configure git to sign commits locally.
